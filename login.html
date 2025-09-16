@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login • Network Drivers</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-page="login">
+    <nav class="navbar">
+        <div class="nav-inner">
+        <div class="nav-left">
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="products.html" class="nav-link">Our Products</a>
+        </div>
+        <div class="nav-center"><a href="index.html" class="brand">Network Drivers</a></div>
+        <div class="nav-right"><a href="cart.html" class="nav-link">Cart</a></div>
+        </div>
+    </nav>
+
+  <main class="container">
+    <div class="login-card">
+      <h2>Welcome back</h2>
+      <p class="muted">Demo auth: use your full Gmail as username and your last name as the password.</p>
+
+      <form id="login-form">
+        <label for="login-email">Email (Gmail)</label>
+        <input id="login-email" type="email" placeholder="you@gmail.com" required />
+
+        <label for="login-pass">Password (Last Name)</label>
+        <input id="login-pass" type="password" placeholder="YourLastName" required />
+
+        <button class="btn btn--primary" type="submit">Log In</button>
+      </form>
+      <div id="login-msg" class="msg"></div>
+    </div>
+  </main>
+
+  <footer><p>&copy; 2025 Network Drivers</p></footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

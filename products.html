@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products • Network Drivers</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-page="products">
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="products.html" class="nav-link">Our Products</a>
+      </div>
+      <div class="nav-center"><a href="index.html" class="brand">Network Drivers</a></div>
+      <div class="nav-right">
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="cart.html" class="nav-link">Cart</a>
+        <button id="logout-btn" class="btn small">Log out</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="shop-header">
+      <h2>Catalog</h2>
+      <div class="muted" id="greeting"></div>
+    </div>
+
+    <!-- Amazon-like layout: left filters (mock) + product grid -->
+    <div class="shop-layout">
+      <aside class="filters">
+        <h3>Filters</h3>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" disabled> In stock only</label></li>
+          <li><label><input type="checkbox" disabled> Price &lt; 500 pts</label></li>
+          <li><label><input type="checkbox" disabled> Gift Cards</label></li>
+        </ul>
+        <p class="muted">Filters are placeholders for the demo.</p>
+      </aside>
+
+      <section class="products-wrap">
+        <div id="results-count" class="muted"></div>
+        <div class="products-grid amazon-grid"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer><p>&copy; 2025 Network Drivers</p></footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
